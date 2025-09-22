@@ -1,0 +1,13 @@
+h1{
+    background-color: bisque;
+
+}
+h2{
+    background-color: green;
+}
+.vidu2 {
+    /* margin: 50px 50px 100px 100px; */
+    width: 50%;
+    margin: 50px;
+    padding: 100px ;
+}

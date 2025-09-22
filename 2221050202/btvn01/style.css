@@ -1,0 +1,117 @@
+body{
+    margin: 0px;
+}
+.header {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.search{
+    display: flex;
+    position: absolute;
+    margin-left:900px;
+    margin-top: 15px;
+
+    
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c4ca3;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    color: white;
+}
+
+.item-menu {
+    text-decoration: none;
+    color: white;  
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+.menu li::after {
+    content:'|';
+    color: gray;
+    font-size: 20px;
+    margin: 0px 20px;
+}
+.menu li:last-child::after {
+  content: none;
+}
+.in4{
+    display: block;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+img { margin: 10px;}
+
+
+.tintuc ul {
+    list-style: none;   
+    margin: 0;
+    display: flex;       
+    justify-content: center;
+    gap: 15px;            
+}
+.title {
+text-decoration: none;
+color: #0c4ca3;
+display: inline-block;
+border-bottom: 3px solid #0c4ca3; 
+padding-bottom: 7px;
+font-size: 45px;
+    
+}
+.xemthem{
+display: flex; 
+position:absolute;
+margin-top: 42px;
+margin-left: 94%;
+}
+.xemthem a {
+    text-decoration: none;
+    color: gray;
+}
+.imgtintuc{
+   height: 7cm;
+   width: 10cm;
+}
+p {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color:inherit
+}
+.linkweb{
+    width: 214px;
+    float: right;
+    border: 1px solid #e7e8ea;
+    margin-top: 0px;
+    padding: 4px 0px;
+    background: #FFF;
+   
+ 
+}
+.oplienket{
+    width: 150px;
+    
+}
+.thongbaohumg{
+    width: 100%;
+    background-color: #bbbbc0;
+}

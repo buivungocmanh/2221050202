@@ -1,0 +1,64 @@
+body{
+    margin: 0px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+     margin: 20px;
+    padding: 0;
+        gap: 20px;
+}
+nav {
+    background-color: #0c4ca3;
+    padding: 10px;
+}
+.danhmuc{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, Arial, Tahoma;font-family: Roboto, Arial, Tahoma;
+    
+}
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;          /* xếp ngang */
+}
+
+.menu li {
+  position: relative;
+  padding: 0 15px;        /* khoảng cách 2 bên */
+}
+.menu li::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: gray;
+}
+.menu li:last-child::after {
+  content: none;
+}
+.banner-qc{
+    display: block;
+    justify-content: center;
+}
+.qc{
+    display: flex;
+    justify-content: center;
+}
+.tintuc{
+    margin-left: 30px;
+
+}
+.item-tintuc{
+    color: #0c4ca3;
+    text-decoration: none;
+    
+}
+.chude {
+  display: block;       
+  flex-wrap: wrap;   
+  gap: 20px;          
+}
+

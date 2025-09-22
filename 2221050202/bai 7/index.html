@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        document.writeln("hello world <br>");
+
+        // chú thích js 
+        let hoTen = "buivungocmanh";
+        document.writeln(hoTen + "<br>");  // dấu + để nối chuỗi
+
+        // hằng số
+        const pi =3.14;
+
+        // phép toán số học
+        let soThuNhat = 31;
+        let soThuHai = 3;
+        let ketQua = 0;
+
+            
+             ketQua = soThuNhat + soThuHai;
+             ketQua++;
+             ketQua--;
+             document.writeln(ketQua);
+             // phép -*/ tương tự như phép cộng
+             // % là phép chia lấy dư
+             // ++ tăng thêm 1 đơn vị
+             // -- giảm đi 1 đơn vị
+
+        // phép gán
+            // += -*/ tương tự
+            soThuBa= 26;
+            soThuBa+=soThuBa;  // số thứ 3 + số thứ 3= ?
+            document.writeln(soThuBa);
+            soThuTu = "52";
+            document.writeln(!(soThuBa !== soThuTu));
+
+            
+            let thongTinSinhVien= {
+                hoTen:"Bùi Văn Mạnh",
+                tuoi: 21,
+                gioiTinh: true,
+                lop:"Hệ thống thông tin k67",
+                diaChi:{
+
+                }
+
+            }
+            let diaChiCuaTao={
+                thanhPho: "Hải Dương",
+                huyen: "????",
+                xaPhuong:"////"
+                
+            }
+            document.writeln(thongTinSinhVien.hoTen +"<br>")
+            document.writeln ("xin chào " +thongTinSinhVien.hoTen)
+            thongTinSinhVien.diaChi = diaChiCuaTao;
+            document.writeln(thongTinSinhVien.diaChi.huyen)
+            let namNay =2025;
+            document.writeln(namNay - thongTinSinhVien.tuoi)
+
+            soThuTu = "52";
+            document.writeln(typeof(soThuTu));
+            soThuTu=parseInt(soThuTu);
+            
+            document.writeln(typeof(soThuTu));
+    </script>
+</body>
+</html>

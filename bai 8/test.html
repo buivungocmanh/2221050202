@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let donHang={
+            maDonHang:"1342325231",
+            thongTinKhachHang:{
+                    hoTen:"Nguyễn Hoàng Nam",
+                    soDienThoai: "0369491566",
+                    trangThai:true,
+
+        },
+            danhSachSP:{
+                caPhe:{
+                    maSanPham:"9238719738",
+                    tenSanPham:"Cà phê",
+                    soLuong:2,
+                    giaTien:50,
+                },
+                matCha:{
+                    maSanPham:"13132",
+                    tenSanPham:"matcha",
+                    soLuong:3,
+                    giaTien:20,
+                },
+                traSua:{
+                    maSanPham:"1313232",
+                    tenSanPham:"trà sữa",
+                    soLuong:5,
+                    giaTien:60,
+                }
+        },
+            trangThai:true,
+            diaChi:"sdahfasodf",
+            
+        }
+        
+        tong = (donHang.danhSachSP.caPhe.soLuong*donHang.danhSachSP.caPhe.giaTien)+
+               (donHang.danhSachSP.matCha.soLuong*donHang.danhSachSP.matCha.giaTien)+
+               (donHang.danhSachSP.traSua.soLuong*donHang.danhSachSP.traSua.giaTien),
+        document.writeln("giá tiền"+"="+tong+ "<br>")
+
+        // string
+
+        let hoTen= "buivungocmanh"
+        document.writeln(hoTen.length) // length đo độ dàì của chuỗi
+        let myString ="Manh dep trai"
+        document.writeln(myString[1]+ "<br>");
+        document.writeln(myString.slice(1,4)) // start -> end - 1
+        document.writeln(myString.replace("","ratdeptrai"))
+        document.writeln(myString.toLocaleLowerCase()+ "<br>")
+        document.writeln(myString.indexOf("M")+ "<br>")
+        document.writeln(myString.includes("M"))
+        document.writeln(myString.split(' '))    // gặp phần tử nào trong mảng trùng với kí tự trong '' thì nó chèn dấu  "," vào
+                                                //de trống thì cắt mọi phần tử
+       document.writeln(myString.startsWith("M")) // kiểm tra kí tự đầu 
+       let number= 3.0544121888
+       document.writeln(number.toFixed(3)) // lấy số thập phân sau số phảy
+       document.writeln(isNaN(10)+ "<br>")
+       let today =new Date('2026-07-26')
+       document.writeln(today) 
+       document.writeln("<br>")
+       document.writeln(today.getFullYear()) // lấy năm 
+       document.writeln(today.getDate())    // lấy ngày
+       document.writeln(today.getMonth())
+
+       </script>
+
+</body>
+</html>

@@ -1,0 +1,393 @@
+/* ====================================
+    0. THIẾT LẬP CƠ BẢN & FONT
+==================================== */
+:root {
+    --primary-color: #007bff; /* Xanh dương chủ đạo */
+    --secondary-color: #ff6347; /* Đỏ cam (Accent/Nút hành động) */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ====================================
+    1. HEADER & NAVIGATION
+==================================== */
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 700;
+}
+.logo i {
+    margin-right: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 5px 0;
+}
+
+nav ul a:hover {
+    color: var(--primary-color);
+}
+
+.btn-login {
+    background-color: var(--secondary-color);
+    color: var(--white) !important;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #e55338;
+    transform: translateY(-2px);
+}
+.btn-login i {
+    margin-right: 5px;
+}
+
+/* ====================================
+    2. HERO SECTION & BOOKING FORM
+==================================== */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://picsum.photos/1920/800?random=13') no-repeat center center/cover;
+    height: 75vh; /* Tăng chiều cao */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.booking-form-wrapper {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-hover);
+}
+
+.booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.form-group {
+    flex: 1; 
+    min-width: 180px; 
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: left;
+    font-size: 14px;
+}
+
+.form-group label i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+.btn-search {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    flex-shrink: 0;
+    min-width: 150px;
+}
+
+.btn-search:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+.btn-search i {
+    margin-right: 5px;
+}
+
+/* ====================================
+    3. CONTENT SECTIONS (DESTINATIONS)
+==================================== */
+.content-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.destination-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+.card-body h4 i {
+    color: var(--secondary-color);
+    margin-right: 5px;
+}
+
+.card-body p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.btn-detail {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.btn-detail:hover {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* ====================================
+    4. PROMO SECTION (ƯU ĐÃI)
+==================================== */
+.promo-section {
+    background-color: #e6f0ff; /* Nền xanh nhạt */
+}
+
+.offer-card {
+    display: flex;
+    align-items: center;
+    background: var(--white);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    text-align: left;
+}
+
+.offer-icon {
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.offer-info h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.offer-info p {
+    color: var(--text-light);
+}
+
+.btn-action {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: auto;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+}
+
+.btn-action:hover {
+    background-color: #e55338;
+}
+
+/* ====================================
+    5. FOOTER
+==================================== */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: var(--text-dark);
+    color: #cccccc;
+    font-size: 14px;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* ====================================
+    6. RESPONSIVE DESIGN (Cho Mobile)
+==================================== */
+@media (max-width: 992px) {
+    .booking-form {
+        flex-direction: column;
+    }
+    .form-group {
+        width: 100%;
+        min-width: unset;
+    }
+    .btn-search {
+        width: 100%;
+        padding: 15px;
+    }
+    .hero-content h2 {
+        font-size: 40px;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+    .offer-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .offer-icon {
+        margin: 0 0 15px 0;
+    }
+    .offer-info {
+        margin-bottom: 20px;
+    }
+    .btn-action {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+}

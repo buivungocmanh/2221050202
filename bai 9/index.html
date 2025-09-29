@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangr</title>
+</head>
+<body>
+    <script>
+        // Mảng
+        let arr = [1,3,5,7,9,'a','b','c',2,3];
+        let ten ='ten';
+        document.writeln(Array.isArray(arr))    // kiểm tra xem nó có phải là mảng không
+        document.writeln(arr.length)            // kiểm tra độ dài của mảng
+        document.writeln(arr[2])                // lôi phần tử thứ n-1 
+        document.writeln(arr.indexOf(3))        // kiểm tra phần tử có..... không ? và nó trả ra vị trí đầu tiên của ptu đó
+        document.writeln(arr.lastIndexOf(3))    // kiểm tra phần tử có..... không ? và nó trả ra vị trí cuối cùng của ptu đó
+        arr[3] = 10;
+        document.writeln(arr)                   // thay vị trí
+        document.writeln("<br>");
+        let a,b,c,d;
+        a = [1,2,3];
+        b = "java stress";
+        c =[42,"js"];
+        d = a.concat(b,c);
+        d.pop();                            // xóa phẩn tử cuối cùng trotrong mang
+        d.push(12)                          // đẩy phần tử vào cuối mảng
+        d.reverse()                         // đảo mảng từ cuối lên đầu
+        d.shift()                           // xóa phẩn tử đầu tiên trong mảng
+        d.unshift()                         // thêm phần tử đầu tiên
+
+        document.writeln(d);                // nối mảng
+        document.writeln("<br>");
+        // let so = 10000006;
+        // let soCuoi = parseInt(so[so.length -1]);
+
+        // document.writeln("Số cuối: " + soCuoi + "<br>");
+
+        // if (soCuoi % 2 == 0) {
+        //     document.writeln(so + " là số chẵn");
+        // } else {
+        //     document.writeln(so + " là số lẻ");
+        // }
+        let so = 1000000000000006;
+        let soCuoi = parseInt(so.toString().slice(-1)); // lấy ký tự cuối rồi chuyển thành số
+
+        document.writeln("Số cuối: " + soCuoi + "<br>");
+
+        if (soCuoi % 2 == 0) {
+            document.writeln(so + " là số chẵn");
+        } else {
+            document.writeln(so + " là số lẻ");
+        }
+        document.writeln("<br>")
+
+        let now = new Date().getHours()
+        document.writeln(now);
+        if (now > 5 && now <10){
+            document.writeln("chao sang")
+
+        }
+        else if ( now >=10 && now <17 ) {
+            document.writeln("chao chieu")
+        }
+        else if ( now >=17 && now <21 ) {
+            document.writeln("chao toi")
+        }
+        else {
+            document.writeln("chao dem")
+        }
+        document.writeln("<br>");
+        let m1= 1; m2= 9; m3 =7;
+        let tong = m1*0.6 +m2*0.3 +m3*0.1;
+        if (tong<4){
+            document.writeln("f")
+        }
+        else if (tong >=4 && tong > 5){
+            document.writeln("d")
+        }
+        else if(tong >=5 && tong>7){
+           document.writeln("c") 
+        }
+        else if(tong >=7 && tong >8){
+           document.writeln("b") 
+        }
+        else if(tong >=8 && tong>10){
+           document.writeln("may dinh") 
+        }
+
+
+
+      
+    </script>
+    
+</body>
+</html>

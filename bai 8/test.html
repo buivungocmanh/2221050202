@@ -62,14 +62,17 @@ let donHang={
        let number= 3.0544121888
        document.writeln(number.toFixed(3)) // lấy số thập phân sau số phảy
        document.writeln(isNaN(10)+ "<br>")
-       let today =new Date('2026-07-26')
+       let today =new Date()
        document.writeln(today) 
        document.writeln("<br>")
        document.writeln(today.getFullYear()) // lấy năm 
        document.writeln(today.getDate())    // lấy ngày
-       document.writeln(today.getMonth())
+       document.writeln(today.getMonth())   // lấy năm -1 vd tháng 7 hiện thị tháng 6
+       document.writeln(today.getDay() + "<br>")
+       document.writeln("Nguyeen")
+    
 
-       </script>
 
+</script>
 </body>
 </html>

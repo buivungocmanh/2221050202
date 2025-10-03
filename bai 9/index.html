@@ -42,7 +42,7 @@
         //     document.writeln(so + " là số lẻ");
         // }
         let so = 1000000000000006;
-        let soCuoi = parseInt(so.toString().slice(-1)); // lấy ký tự cuối rồi chuyển thành số
+        let soCuoi = parseInt(so.toString().slice(-1));
 
         document.writeln("Số cuối: " + soCuoi + "<br>");
 
@@ -69,23 +69,32 @@
             document.writeln("chao dem")
         }
         document.writeln("<br>");
-        let m1= 1; m2= 9; m3 =7;
-        let tong = m1*0.6 +m2*0.3 +m3*0.1;
-        if (tong<4){
-            document.writeln("f")
+        let m1= 11, m2=4, m3 =4;
+        let tong = m1*0.6 + m2*0.3 + m3*0.1;
+        document.writeln(tong)
+        if (m1>=0 && m1>10 || m2>=0 && m2>10 || m3>=0 && m3>10 ) {
+            document.writeln("diem deo hop le")
         }
-        else if (tong >=4 && tong > 5){
-            document.writeln("d")
+        else{
+        if (tong < 4) {
+            document.writeln("F");
         }
-        else if(tong >=5 && tong>7){
-           document.writeln("c") 
+        else if (tong >= 4 && tong < 5) {
+            document.writeln("D");
         }
-        else if(tong >=7 && tong >8){
-           document.writeln("b") 
+        else if (tong >= 5 && tong < 7) {
+            document.writeln("C");
         }
-        else if(tong >=8 && tong>10){
-           document.writeln("may dinh") 
+        else if (tong >= 7 && tong < 8) {
+            document.writeln("B");
         }
+        else if (tong >= 8 && tong <= 10) {
+            document.writeln("mày đỉnh");
+        } else {
+            document.writeln("sai điểm");
+        }
+         }
+
 
 
 

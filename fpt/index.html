@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="script.js">
 
 </head>
 
 <body>
+  <script></script>
 <div class="header">
     <ul>
         <li><a href=""> <img src="img/logowebsite4x_1748221195181.png" alt=""> </a></li>
@@ -47,65 +49,74 @@
         <li style="margin-left:5px ;"><a href="">Đăng nhập</a></li>
 </div>
 <div class="main">
-   <div>
+  <div>
     <img src="img/09_68bfea5810013f0001205210.jpg" alt="">
-   </div>
-   <div class="phim"> 
+  </div>
+
+  <div class="phim"> 
     <div class="content-phim">
-        <div style="position: relative; height: auto;">
+      <div style="position: relative; height: auto;">
         <div class="pic_qc_film">
-        <img src="img/film/san-lung-tho-ngoc-mua-3-fpt-play-1744876789893_Background_origin.jpg" alt="">
+          <img id="poster" src="img/film/san-lung-tho-ngoc-mua-3-fpt-play-1744876789893_Background_origin.jpg" alt="">
         </div>
+
         <div class="title_qc_film">
-        <img src="img/title_film.png" alt="">
-         <div class="in4_qc_film">
-            <p> Full HD</p>
-            <p>Lông tiếng</p>
-            <a href=""> <b>Xem phim</b></a>
+          <p id="tenPhim">Tên phim</p>
+          <div class="in4_qc_film">
+            <p id="namPhatHanh">Năm phát hành</p>
+            <p id="tuoi">Tuổi</p>
+            <p id="thoiLuong">Thời lượng</p>
+            <p id="theLoai">Thể loại</p>
+            <p id="quocGia">Quốc gia</p>
+            <a href="#"><b>Xem phim</b></a>
+          </div>
         </div>
-        </div>
-    </div> 
+      </div> 
     </div>
-   </div> 
-   <div style="">
+  </div> 
+
+  <div>
     <div style="margin-top: 30px;">
-       <b>Các bộ phim yêu thích</b>
+      <b>Các bộ phim yêu thích</b>
     </div>
     <div class="menu_films">
+      <div></div>
+
+      <div onclick="chonPhim(1)" class="tags_films">
+        <img src="img/muado.jpeg" alt="">
+        <p>Mưa đỏ</p>
+      </div>
+
+      <div onclick="chonPhim(2)" class="tags_films">
+        <img src="img/phim/conan.jpg" alt="">
+        <p>Conan - Thám tử lừng danh</p>
+      </div>
+    
         <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
+            <img src="img/phim/deptraithaysaisai.jpg" alt="">
+            <p> Đẹp Trai thấy sai sai</p>
+        </div>
+        <div class="tags_films">
+            <img src="img/muado.jpeg" alt="">
             <p> Mưa đỏ</p>
         </div>
         <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
+            <img src="img/muado.jpeg" alt="">
             <p> Mưa đỏ</p>
         </div>
         <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
+            <img src="img/muado.jpeg" alt="">
             <p> Mưa đỏ</p>
         </div>
         <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
+            <img src="img/muado.jpeg" alt="">
             <p> Mưa đỏ</p>
         </div>
         <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
-            <p> Mưa đỏ</p>
-        </div>
-        <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
-            <p> Mưa đỏ</p>
-        </div>
-        <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
-            <p> Mưa đỏ</p>
-        </div>
-        <div class="tags_films">
-            <img src="img/mua-do2-1122.jpeg" alt="">
+            <img src="img/muado.jpeg" alt="">
             <p> Mưa đỏ</p>
         </div>
     </div>
-   </div>
    <div>
     <div style="margin-top: 30px;">
        <b>Danh mục</b>
@@ -145,7 +156,7 @@
     </div>
    </div>
 </div>
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="footeron">
     <div class="cot">
       <h3>Công ty Cổ phần Viễn Thông FPT</h3>
@@ -206,8 +217,8 @@
     <img src="img/app-store-badge_1755080854724.png" alt="App Store" style="width:120px;">
     <img src="img/google-play-badge_1755080854743.png" alt="Google Play" style="width:120px;">
   </div>
-</footer>
-
+</footer> -->
+<script src="script.js"></script>
 
 </body>
 

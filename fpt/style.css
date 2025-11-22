@@ -161,7 +161,12 @@ margin: 0px;
 
 }
 footer{
-    position: fixed;   /* cố định vị trí */
+      background-color: #000;
+    color: #fff;
+    padding: 30px 50px;
+     font-size: 14px;
+    display: hidden;
+    position: hidden; 
     bottom: 0;         /* dính sát mép dưới */
     left: 0;
     width: 100%;       /* trải ngang màn hình */
@@ -174,13 +179,7 @@ footer{
 .info_cop{
 
 }
-.footer {
-  background-color: #000;
-  color: #fff;
-  /* margin-top: auto; */
-  padding: 30px 50px;
-  font-size: 14px;
-}
+
 
 .footeron {
   display: flex;

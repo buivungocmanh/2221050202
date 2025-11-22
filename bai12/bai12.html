@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div>
+    <h1>Số thứ nhất</h1>
+    <input type="number" id="soThuNhat">
+    </div>
+     <div>
+    <h1>Số thứ Hai</h1>
+    <input type="number" id="soThuHai">
+    </div>
+    <div>
+        <button onclick="tinhTong()">Tính Tổng</button>
+        <button onclick="tinhHieu()">tính Hiệu</button>
+        <button onclick="tinhTich()">Tính Tích</button>
+        <button onclick="tinhThuong()">Tính Thương</button>
+    </div>
+    <div>
+        kết quả: <input type="text" id="ketQua" value="0">
+    </div> -->
+    <!-- <script>
+        function tinhTong() {
+            let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+           
+            let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+           
+            let tong = soThuNhat + soThuHai;
+            document.getElementById("ketQua").value = tong;
+            let canhBao = "";
+            if (!soThuNhat){
+                canhBao +="Nhập số thứ nhât"
+            }
+            if (!soThuHai){
+                canhBao +="Nhập số thứ hai"
+            }
+            if (canhBao){
+                alert(canhBao);
+            
+            }
+        }
+        function tinhHieu() {
+            let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+           
+            let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+           
+            let hieu = soThuNhat - soThuHai;
+            document.getElementById("ketQua").value = hieu;
+        }
+        function tinhTich() {
+            let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+           
+            let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+           
+            let tich = soThuNhat * soThuHai;
+            document.getElementById("ketQua").value = tich;
+        }
+        function tinhThuong() {
+            let soThuNhat = parseFloat(document.getElementById("soThuNhat").value);
+           
+            let soThuHai = parseFloat(document.getElementById("soThuHai").value);
+           
+            let thuong = soThuNhat / soThuHai;
+            document.getElementById("ketQua").value = thuong;
+        }
+    </script> -->
+
+    
+    <!-- <div>
+        Nhập vào số A : <input type="number" id="soA">
+    </div>
+    <div>
+        Nhập vào số B : <input type="number" id="soB">
+    </div>
+    <div>
+        Nhập vào số A+B: <input type="number" id="ketQua">
+    </div>
+    <button onclick="tinh()">xem kết quả</button>
+    <script>
+        function tinh(){
+            var soA = document.getElementById('soA').value;
+            var soB = document.getElementById('soB').value;
+            var ketQua = parseInt(soA) + parseInt(soB);
+            document.getElementById('ketQua').value = ketQua;
+        }
+        
+
+    </script> -->
+    <!-- <div class="index">
+        <div class="title" style="text-align: center;">
+            Trời sáng
+        </div>
+        <div style="text-align: center;">
+            <img class="image" src="matroi.png" style="width: 100px;">
+        </div>
+
+        <div class="mode" style="text-align: center;">
+            <button onclick="doiCheDo()">Đổi chế độ</button>
+        </div>
+    </div>
+    <script>
+        var troiSang = true;
+        function doiCheDo() {
+            if (troiSang == true) {
+                document.getElementsByClassName('title')[0].innerHTML = "Trời tối";
+                document.getElementsByClassName('image')[0].src = 'matrang.webp';
+                document.getElementsByTagName('body')[0].style = "background-color: black;"
+                document.getElementsByClassName('title')[0].style = "color: pink; text-align: center;"
+                troiSang = false;
+            }
+            else {
+                document.getElementsByClassName('title')[0].innerHTML = "Trời sáng";
+                document.getElementsByClassName('image')[0].src = 'matroi.png';
+                document.getElementsByTagName('body')[0].style = "background-color: white;"
+                document.getElementsByClassName('title')[0].style = "color: black; text-align: center;"
+                troiSang = true;
+            }
+        }
+    </script> -->
+
+ 
+        <h1>Chỉ số BMI</h1>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+        <div>
+            <div>
+            <b>Nhập cân nặng</b>
+            <input type="number" id="canNang"> kg
+            </div>
+            <div>
+            <b>Nhập chiều cao</b>
+            <input type="number" id="chieuCao"> m
+            </div>
+        
+        <div>
+            <button onclick="tinhBMI()">Kết quả</button>
+            <input type="text" id="ketQua" readonly>
+        </div>
+        </div>
+        <div>
+            <img class="anh" src="" alt="" width="200">
+        </div>
+        </div>
+
+    <script>
+        function tinhBMI() {
+            var canNang = parseFloat(document.getElementById('canNang').value);
+            var chieuCao = parseFloat(document.getElementById('chieuCao').value);
+            var chiSoBmi = canNang / (chieuCao * chieuCao);
+            document.getElementById('ketQua').value = chiSoBmi.toFixed(2);
+            if (chiSoBmi < 18.5) {
+                document.getElementsByClassName('anh')[0].src = "thieucan.jpg";
+            } else if (chiSoBmi >= 18.5 && chiSoBmi < 24.9) {
+                document.getElementsByClassName('anh')[0].src = "binhthuong.jpg";
+            } else if (chiSoBmi >= 25 && chiSoBmi < 29.9) {
+               document.getElementsByClassName('anh')[0].src = "thuacan.jpg";
+            } else if (chiSoBmi >= 30 && chiSoBmi < 39.9) {
+                document.getElementsByClassName('anh')[0].src = "beophic1.jpg";
+            } else {
+                document.getElementsByClassName('anh')[0].src = "beophinang.jpg";
+            }
+        }
+    </script>
+ </script>
+</div>
+
+    
+</body>
+</html>

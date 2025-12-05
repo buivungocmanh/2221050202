@@ -1,0 +1,39 @@
+p{
+            font-weight: bold;
+            font-style: italic;
+            margin:10px 0;
+        }
+        h1{
+            margin: 10px 0;
+        }
+        .container{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 35%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        form{
+            width:80%;
+        }
+        input{
+            width:100%;
+            padding: 10px 0;
+            border-radius: 10px
+
+        }
+        .box{
+            margin: 10px 0;
+        }
+        .select{
+            width: 100%;
+            padding: 10px 0;
+        }
+        .warning{
+            color: red;
+            font-weight: bold;
+
+        }
